@@ -1,0 +1,9 @@
+package dateandtime;
+
+import java.util.Date;
+
+public class dateandtime {
+	
+Date date = new Date();	
+
+}

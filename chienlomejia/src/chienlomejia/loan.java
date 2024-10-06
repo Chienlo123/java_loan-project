@@ -1,0 +1,93 @@
+package chienlomejia;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class loan {
+
+	private JFrame frmLoginKayoh;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					loan window = new loan();
+					window.frmLoginKayoh.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public loan() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmLoginKayoh = new JFrame();
+		frmLoginKayoh.setTitle("Login Kayoh");
+		frmLoginKayoh.setBounds(100, 100, 450, 300);
+		frmLoginKayoh.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmLoginKayoh.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Username");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblNewLabel.setBounds(111, 66, 65, 14);
+		frmLoginKayoh.getContentPane().add(lblNewLabel);
+		
+		JLabel lblPassword = new JLabel("Password");
+		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblPassword.setBounds(111, 108, 65, 14);
+		frmLoginKayoh.getContentPane().add(lblPassword);
+		
+		textField = new JTextField();
+		textField.setToolTipText("");
+		textField.setBounds(218, 63, 86, 20);
+		frmLoginKayoh.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setToolTipText("");
+		textField_1.setColumns(10);
+		textField_1.setBounds(218, 105, 86, 20);
+		frmLoginKayoh.getContentPane().add(textField_1);
+		
+		JLabel lblNewLabel_1 = new JLabel("Login Dashboard");
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 24));
+		lblNewLabel_1.setBounds(111, 11, 196, 29);
+		frmLoginKayoh.getContentPane().add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Login");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+			}
+		});
+		btnNewButton.setBounds(165, 133, 89, 23);
+		frmLoginKayoh.getContentPane().add(btnNewButton);
+		
+		JLabel lblNewLabel_2 = new JLabel("click count : 0");
+		lblNewLabel_2.setBounds(108, 201, 130, 14);
+		frmLoginKayoh.getContentPane().add(lblNewLabel_2);
+	}
+}

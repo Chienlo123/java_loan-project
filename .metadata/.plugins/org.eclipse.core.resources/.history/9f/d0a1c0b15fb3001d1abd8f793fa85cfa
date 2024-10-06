@@ -1,0 +1,9 @@
+package dateandtime;
+
+
+
+public class dateandtime {
+	
+Date date = new Date();	
+
+}

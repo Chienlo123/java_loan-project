@@ -1,0 +1,5 @@
+package com.example.StudentCrud.controller;
+
+public class StudentController {
+
+}

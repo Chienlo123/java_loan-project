@@ -1,0 +1,17 @@
+package dateandtime;
+
+import java.util.Date;
+
+public class dateandtime4 {
+
+	public static void main(String[] args) {
+		
+		Date date = new Date();
+		
+		
+		System.out.printf("%1$s %2$tb %2$td %2$tY", "Due date: ", date);
+		
+
+	}
+
+}

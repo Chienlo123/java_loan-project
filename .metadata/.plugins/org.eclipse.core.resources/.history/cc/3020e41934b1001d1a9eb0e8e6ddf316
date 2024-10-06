@@ -1,0 +1,34 @@
+package chienlomejia;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+
+public class helloworld {
+
+	public static void main(String[] args) {
+		
+		
+		JFrame frame= new JFrame();
+		JLabel LABEL = new JLabel("ggwp");
+
+		LABEL.setBounds(250,100,100,100);
+		JButton button = new JButton("Click Here");
+		
+		//button settings
+		frame.add(button);
+		//frame settings
+		frame.setSize(600,600); //dimension
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Chienlo Kyut");
+		//label setting
+		frame.add(LABEL);
+		frame.setLayout(null); 
+		
+		
+		
+		
+	}
+
+}

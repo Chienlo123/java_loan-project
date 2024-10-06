@@ -1,0 +1,18 @@
+package dateandtime;
+
+import java.text.*;
+import java.util.Date;
+
+public class dateandtime2 {
+
+	public static void main(String[] args) {
+		  
+           
+		Date dNow = new Date();
+		SimpleDateFormat ft = 
+				new SimpleDateFormat("E yyy.MM.dd 'at' hh:mm:ss a zzz ");
+		
+		system.out.println("Current Date:" + ft.format)
+	}
+
+}

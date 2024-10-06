@@ -1,0 +1,5 @@
+package com.example.StudentCrud.repository;
+
+public interface StudentRepository public interface StudentRepository extends JpaRepository<Student, Long> {
+	 
+	}

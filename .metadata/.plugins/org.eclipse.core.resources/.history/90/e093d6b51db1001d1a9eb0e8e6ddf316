@@ -1,0 +1,32 @@
+package chienlomejia;
+
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class helloworld {
+
+	public static void main(String[] args) {
+		
+		
+		JFrame frame= new JFrame();
+		JLabel LABEL = new JLabel("ggwp");
+		LABEL.setBounds(100,100,100,100);
+		frame.setLayout(null);
+		
+		
+		
+		frame.setSize(600,600); //dimension
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Chienlo Kyut");
+		
+		frame.add(LABEL);
+		
+		
+		
+		
+		
+	}
+
+}
